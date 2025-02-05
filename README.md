@@ -7,6 +7,8 @@
 ## Create SSH Key 
 
 `ssh-keygen –t rsa –b 4096 –C YOURGITHUBEMAIL@PLACEHOLDER.NET`
+or
+`ssh-keygen -t ed25519 -C YOURGITHUBEMAIL@PLACEHOLDER.NET`
 *dont create a pass phrase*
 
 **Mac Users: try this if the above command is not working**
@@ -25,11 +27,13 @@ Press `enter` again to not use a passphrase
 
 ## Link key to machine 
 
-`ssh-add ~/.ssh/id_rsa` 
+`ssh-add ~/.ssh/id_rsa`
+`ssh-add ~/.ssh/id_ed25519`
 
 ### Copy to clipboard  
 
 `clip < ~/.ssh/id_rsa.pub`
+`clip < ~/.ssh/id_ed25519.pub`
 
 **Mac**
 
